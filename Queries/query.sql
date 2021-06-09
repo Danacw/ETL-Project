@@ -6,7 +6,6 @@ select * from protein_supply_quantity;
 select * from covid_19_diet;
 
 -- Select data based on type field 
-
 select * from covid_19_diet where type = 1 
 limit 5;
 select * from covid_19_diet where type = 2 
