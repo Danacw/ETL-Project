@@ -1,25 +1,23 @@
 -- Query to check successful load
-select * from Fat_Supply_Quantity;
-
-select * from Food_Supply_Quantity;
-
-select * from Food_Supply_Kcal;
-
-select * from Protein_Supply_Quantity;
-
-select * from Covid_19_Diet;
+select * from fat_supply_quantity;
+select * from food_supply_quantity;
+select * from food_supply_kcal;
+select * from protein_supply_quantity;
+select * from covid_19_diet;
 
 -- Select data based on type field 
 
-select * from Covid_19_Diet where type = 1 
+select * from covid_19_diet where type = 1 
+limit 5;
+select * from covid_19_diet where type = 2 
+limit 5;
+select * from covid_19_diet where type = 3
+limit 5;
+select * from covid_19_diet where type = 4
 limit 5;
 
-select * from Covid_19_Diet where type = 2 
-limit 5;
+-- Select data based on country
+select * from covid_19_diet where country = 'Afghanistan'
+select * from covid_19_diet where country = 'India'
+select * from covid_19_diet where country = 'United States of America'
 
-
-select * from Covid_19_Diet where type = 3
-limit 5;
-
-select * from Covid_19_Diet where type = 4
-limit 5;

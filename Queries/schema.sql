@@ -1,56 +1,65 @@
 -- Create Four Tables
-Create table Fat_Supply_Quantity (
-	id int primary key,
+Create table fat_supply_quantity (
+	country text primary key, 
 	type int default 1,
-	Country text, 
-	Animal_Products text,
-	Cereals text, 
-	Eggs text,
-	Fruits text,
-	Meat text,
-	Milk text,
-	Fish_Seafood text,
-	Vegetables text
+	animal_products text,
+	cereals text, 
+	eggs text,
+	fruits text,
+	meat text,
+	milk text,
+	fish_seafood text,
+	vegetables text
 );
 	
-Create table Food_Supply_Quantity (
-	id int primary key,
+Create table food_supply_quantity (
+	country text primary key, 
 	type int default 2,
-	Country text, 
-	Animal_Products text,
-	Cereals text, 
-	Eggs text,
-	Fruits text,
-	Meat text,
-	Milk text,
-	Fish_Seafood text,
-	Vegetables text
+	animal_products text,
+	cereals text, 
+	eggs text,
+	fruits text,
+	meat text,
+	milk text,
+	fish_seafood text,
+	vegetables text
 );
 
-Create table Food_Supply_Kcal (
-	id int primary key,
+Create table food_supply_kcal (
+	country text primary key, 
 	type int default 3,
-	Country text, 
-	Animal_Products text,
-	Cereals text, 
-	Eggs text,
-	Fruits text,
-	Meat text,
-	Milk text,
-	Fish_Seafood text,
-	Vegetables text
+	animal_products text,
+	cereals text, 
+	eggs text,
+	fruits text,
+	meat text,
+	milk text,
+	fish_seafood text,
+	vegetables text
 );
 
-Create table Protein_Supply_Quantity (
-	id int primary key,
+Create table protein_supply_quantity (
+	country text primary key, 
 	type int default 4,
-	Country text, 
-	Animal_Products text,
-	Cereals text, 
-	Eggs text,
-	Fruits text,
-	Meat text,
-	Milk text,
-	Fish_Seafood text,
-	Vegetables text
+	animal_products text,
+	cereals text, 
+	eggs text,
+	fruits text,
+	meat text,
+	milk text,
+	fish_seafood text,
+	vegetables text
+);
+
+Create table covid_19_diet (
+	country text, 
+	type int,
+	animal_products text,
+	cereals text, 
+	eggs text,
+	fruits text,
+	meat text,
+	milk text,
+	fish_seafood text,
+	vegetables text
 );
