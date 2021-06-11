@@ -67,7 +67,13 @@ Create table kcal_supply (
 	meat_kcal numeric,
 	milk_kcal numeric,
 	fish_seafood_kcal numeric,
-	vegetables_kcal numeric
+	vegetables_kcal numeric,
+	obesity numeric,
+	undernourished numeric,
+	confirmed_cases numeric,
+	deaths numeric,
+	recovered numeric,
+	population int
 );
 
 Create table food_quantity (
@@ -79,7 +85,13 @@ Create table food_quantity (
 	meat_quantity numeric,
 	milk_quantity numeric,
 	fish_seafood_quantity numeric,
-	vegetables_quantity numeric
+	vegetables_quantity numeric,
+	obesity numeric,
+	undernourished numeric,
+	confirmed_cases numeric,
+	deaths numeric,
+	recovered numeric,
+	population int
 );
 
 Create table protein_supply (
@@ -91,5 +103,11 @@ Create table protein_supply (
 	meat_protein numeric,
 	milk_protein numeric,
 	fish_seafood_protein numeric,
-	vegetables_protein numeric
+	vegetables_protein numeric,
+	obesity numeric,
+	undernourished numeric,
+	confirmed_cases numeric,
+	deaths numeric,
+	recovered numeric,
+	population int
 );
