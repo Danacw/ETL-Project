@@ -20,3 +20,13 @@ select * from covid_19_diet where country = 'Afghanistan'
 select * from covid_19_diet where country = 'India'
 select * from covid_19_diet where country = 'United States of America'
 
+
+--Select fat, protein, kcal, and food quantity of vegetable from each table--
+SELECT fq.country, fq.vegetables AS QUANTITY, fat.vegetables AS FAT, fk.vegetables AS KCAL, pq.vegetables AS PROTEIN	
+FROM food_supply_quantity fq
+JOIN fat_supply_quantity fat
+ON fq.country = fat.country
+JOIN food_supply_kcal fk
+ON fk.country = fat.country
+JOIN protein_supply_quantity pq
+ON pq.country=fk.country;
