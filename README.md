@@ -1,4 +1,4 @@
-# ETL-Project
+# ETL-Project | Covid-19 Rates and Global Diet Trends
 
 **Approach:**
 
