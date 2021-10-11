@@ -29,4 +29,13 @@ ON fq.country = fat.country
 JOIN food_supply_kcal fk
 ON fk.country = fat.country
 JOIN protein_supply_quantity pq
-ON pq.country=fk.country;
+ON pq.country=fk.country
+
+--Select animal_products from protein_supply_quantity table and fat_supply_quanityt table and join with covid_data table
+SELECT pq.country, cd.population AS POPULATION,  pq.animal_products AS PROTEIN_INTAKE, fat.animal_products AS FAT_INTAKE, cd.obesity AS OBESITY, cd.undernourished AS UNDERNOURISHED, cd.confirmed AS CONFIRMED_CASES, cd.deaths AS DEATHS  
+FROM protein_supply_quantity pq
+JOIN covid_data cd
+ON pq.country = cd.country
+JOIN fat_supply_quantity fat
+ON fat.country = cd.country;
+
