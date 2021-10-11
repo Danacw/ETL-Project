@@ -8,7 +8,7 @@ For our ETL project, we linked data on fat quantity, energy intake (kcal), food 
 
   Extract_Transform: Contains our Jupyter Notebook files used to clean the data and load the DataFrames into PostgreSQL.
     
-  Load:Contains our schemas and queries used to create and join our tables together. 
+  Load: Contains our schemas and queries used to create and join our tables together. 
 
 **Data Source:** https://www.kaggle.com/mariaren/covid19-healthy-diet-dataset 
 
